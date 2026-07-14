@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pace-pic-validation"
+version = "0.1.0"
+description = "Validation of PACE L2 PIC product against in-situ ground truth"
+authors = [{name = "Tim Fugl"}]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "xarray",
+    "netCDF4",
+    "scipy",
+    "matplotlib",
+    "earthaccess",
+    "pyyaml",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
