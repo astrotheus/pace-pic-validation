@@ -1,0 +1,36 @@
+Cruises:
+
+  SS20260304:
+    pic_data:
+      path: '/Volumes/Extreme SSD/PhD backup/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/SScampaigns/SS20260304/pic_icp_data/pic_icp_data.csv'
+      unit: "mg/m3"
+      metadata: "rows 1-6, in python iterates 0-5 are metadata"
+     
+
+    station_reference:
+      path: '/Volumes/Extreme SSD/PhD backup/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/SScampaigns/SS20260304/station_data/average_station_data.csv'
+      unit: "time in UTC ISO 8601"
+      metadata: "rows 1-6, in python iterates 0-5 are metadata"
+
+
+  SS20260504:
+    pic_data:
+      path: '/Volumes/Extreme SSD/PhD backup/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/SScampaigns/SS20260504/pic_icp_data/pic_icp_data.csv'
+      unit: "mg/m3"
+      metadata: "rows 1-6, in python iterates 0-5 are metadata"
+ 
+    station_reference:
+      path: '/Volumes/Extreme SSD/PhD backup/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/SScampaigns/SS20260504/station_data/average_station_data.csv'
+      unit: "time in UTC ISO 8601"
+      metadata: "rows 1-6, in python iterates 0-5 are metadata"
+
+  SS20260601:
+    pic_data:
+      path: '/Volumes/Extreme SSD/PhD backup/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/SScampaigns/SS20260601/pic_icp_data/pic_icp_data.csv'
+      unit: "mg/m3"
+      metadata: "rows 1-6, in python iterates 0-5 are metadata"
+
+    station_reference:
+      path: '/Volumes/Extreme SSD/PhD backup/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/SScampaigns/SS20260601/station_data/average_station_data.csv'
+      unit: "time in UTC ISO 8601"
+      metadata: "rows 1-6, in python iterates 0-5 are metadata"

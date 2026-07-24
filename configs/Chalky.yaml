@@ -1,0 +1,16 @@
+name: Chalky_PIC_discrete
+
+inputs: 
+  pic_data:
+    path: '/Users/timfugl/Desktop/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/CHALKY/PIC_Master.csv'
+    unit: 'mmol/m3'
+    metadata: 
+  
+  
+  station_reference:
+    path: '/Users/timfugl/Desktop/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/CHALKY/UW_log_Master.csv'
+  
+
+
+
+  

@@ -1,0 +1,31 @@
+name: MarSens_PIC_discrete
+
+inputs: 
+  pic_data:
+    path: '/Users/timfugl/Desktop/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/consolidated PIC-ICP marsens/pic_icp_data.csv'
+    unit: 'mg/m3'
+    metadata: 'rows 1-6, in python iterates 0-5 are metadata'
+    columns: 
+      - 'Station'
+      - 'Replicates_n'
+      - 'PIC_mg_per_m3'
+      - 'Observations'
+  
+  station_reference:
+    path: '/Users/timfugl/Desktop/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/consolidated PIC-ICP marsens/station_reference.csv'
+    unit: 'time in UTC ISO 8601'
+    metadata: 'rows 1-6, in python iterates 0-5 are metadata'
+    columns: 
+      - 'Station'
+      - 'Campaign'
+      - 'Time_start'
+      - 'Time_end'
+      - 'Time_mean'
+      - 'Longitude_start'
+      - 'Longitude_end'
+      - 'Longitude_mean'
+      - 'Latitude_start'
+      - 'Latitude_end'
+      - 'Latitude_mean'
+
+

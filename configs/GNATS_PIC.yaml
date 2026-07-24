@@ -1,0 +1,19 @@
+name: GNATS_PIC_discrete
+
+inputs: 
+  pic_data:
+    path: '/Users/timfugl/Desktop/PhD_Ocean_Color_Chemistry/Obj1_PIC Product Validation for PACE/Data/PIC_discrete/Bigelow data/GNATS_20260304_PIC_to_date.csv'
+    metadata: 'value column coontains PIC concentration in mol/m3, datetime column has nans for many rows, create datetime from date and time column'
+    unit: 'mol/m3'
+    columns: 
+      - 'date'
+      - 'time'
+      - 'lat'
+      - 'lon'
+      - 'cruise'
+      - 'station'
+      - 'variable'
+      - 'value'
+      - 'datetime'
+      - 'unit'
+      - 'origin_file'
