@@ -35,7 +35,7 @@ def units_to_PIC_mmol_m3(df, start_unit, start_column, end_column, caco3=False):
         'mol/L': 1,      # 1 mol/L = 1000 mol/m3 = 1,000,000 mmol/m3
         'mmol/L': 1 / 1000,     # 1 mmol/L = 1000 mmol/m3
         'mg/m3': 1 / M,
-        'mg/L': 1000 / M,   # same as g/m3
+        'mg/L': 1 / M,   # same as g/m3
         'ug/L': 1 / M,
         'g/m3': 1000 / M,
     }

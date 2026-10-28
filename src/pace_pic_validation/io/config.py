@@ -1,5 +1,6 @@
 # src/pace_pic_validation/io/config.py
 import yaml
+
 from pathlib import Path
 
 def load_paths_config(config_name="paths.yaml", config_dir=None):

@@ -21,3 +21,24 @@ data/processed/*
 
 reports/figures/*
 !reports/figures/.gitkeep
+
+# Scientific data: exclude at any folder depth
+*.[nN][cC]
+*.[nN][cC]4
+*.[hH]5
+*.[hH][dD][fF]
+*.[hH][dD][fF]5
+
+# Images and generated figures
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[pP][nN][gG]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+
+# Accidental download folder
+/notebooks/None/
+
+# Additional local secrets
+.env.*
+!.env.example

@@ -17,7 +17,7 @@ def list_oci_collections(instrument="OCI"):
     return short_names
 
 
-def search_granules(short_name, start_date, end_date, granule_pattern="*"):
+def search_granules(short_name, start_date, end_date, granule_pattern="*", lower_left_lon = None, lower_left_lat=None, upper_right_lon=None, upper_right_lat=None):
     """
     Search PACE granules for a given product, date range, and filename pattern.
 
@@ -38,6 +38,10 @@ def search_granules(short_name, start_date, end_date, granule_pattern="*"):
         short_name=short_name,
         temporal=(start_date, end_date),
         granule_name=granule_pattern,
+        bounding_box = (lower_left_lon, 
+                        lower_left_lat, 
+                        upper_right_lon, 
+                        upper_right_lat)
     )
     print(f"Found {len(results)} granules")
     return results
