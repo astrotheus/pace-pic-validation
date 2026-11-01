@@ -16,3 +16,8 @@ Failures cannot appear remotely until a later successful upload. Only the latest
 | 2026-10-30T00:06:24+01:00 | SUCCESS: verified GitHub main at 197f4b8c1748f596c8e782ffab50efcd48517372 |
 | 2026-10-31T00:03:28+01:00 | START: synchronization attempt |
 | 2026-10-31T00:18:53+01:00 | PREPARED: snapshot for this attempt; visibility of this commit on GitHub confirms delivery |
+| 2026-10-31T00:19:06+01:00 | SUCCESS: verified GitHub main at e6c1399d87e41ed6d92636999138db5b99d772cc |
+| 2026-11-01T00:13:17+01:00 | START: synchronization attempt |
+| 2026-11-01T00:30:30+01:00 | FAILED: upload not verified; details in laptop log |
+| 2026-11-01T21:27:50+01:00 | START: synchronization attempt |
+| 2026-11-01T21:27:53+01:00 | PREPARED: snapshot for this attempt; visibility of this commit on GitHub confirms delivery |
