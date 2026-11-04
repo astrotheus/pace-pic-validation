@@ -1,7 +1,7 @@
 import pandas as pd 
 
 
-def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_name): 
+def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_name, blank_value): 
 
     df = df.copy()
     M_Ca = 40.08 #g/mol
@@ -11,9 +11,12 @@ def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_
     df[V_acid_column] = pd.to_numeric(df[V_acid_column])
     df[V_filt_column] = pd.to_numeric(df[V_filt_column])
 
+
+    df['blank'] = blank_value
+
     # seawater correction
     # mg / L 
-    df[ca_column] = df[ca_column] - 0.038215379 * df[na_column]
+    df[ca_column] = df[ca_column] - 0.038215379 * df[na_column] - df['blank']
 
     # mg / L -> mg in falcon
     # ca_column is in mL
