@@ -5,9 +5,6 @@ Failures cannot appear remotely until a later successful upload. Only the latest
 
 | Local time | Event |
 |---|---|
-| 2026-10-31T00:19:06+01:00 | SUCCESS: verified GitHub main at e6c1399d87e41ed6d92636999138db5b99d772cc |
-| 2026-11-01T00:13:17+01:00 | START: synchronization attempt |
-| 2026-11-01T00:30:30+01:00 | FAILED: upload not verified; details in laptop log |
 | 2026-11-01T21:27:50+01:00 | START: synchronization attempt |
 | 2026-11-01T21:27:53+01:00 | PREPARED: snapshot for this attempt; visibility of this commit on GitHub confirms delivery |
 | 2026-11-01T21:27:59+01:00 | SUCCESS: verified GitHub main at 11e86b2b184c56d0fa7b58b348bf6e3a9c040aef |
@@ -105,3 +102,6 @@ Failures cannot appear remotely until a later successful upload. Only the latest
 | 2026-11-25T21:47:31+01:00 | SUCCESS: verified GitHub main at 56ba075385026e1392d4bea3e93a878a19c79358 |
 | 2026-11-26T11:25:17+01:00 | START: synchronization attempt |
 | 2026-11-26T11:25:21+01:00 | PREPARED: snapshot for this attempt; visibility of this commit on GitHub confirms delivery |
+| 2026-11-26T11:25:35+01:00 | SUCCESS: verified GitHub main at 2f892270911863491f9e80532d7a3ce03ce06b6a |
+| 2026-11-27T00:05:22+01:00 | START: synchronization attempt |
+| 2026-11-27T00:05:30+01:00 | PREPARED: snapshot for this attempt; visibility of this commit on GitHub confirms delivery |
