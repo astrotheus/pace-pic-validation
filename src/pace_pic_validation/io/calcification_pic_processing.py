@@ -1,7 +1,7 @@
 import pandas as pd 
 
 
-def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_name, blank_value): 
+def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_name, blank_value_ca, blank_value_na): 
 
     df = df.copy()
     M_Ca = 40.08 #g/mol
@@ -12,11 +12,12 @@ def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_
     df[V_filt_column] = pd.to_numeric(df[V_filt_column])
 
 
-    df['blank'] = blank_value
+    df['blank_ca'] = blank_value_ca
+    df['blank_na'] = blank_value_na
 
     # seawater correction
     # mg / L 
-    df[ca_column] = df[ca_column] - 0.038215379 * df[na_column] - df['blank']
+    df[ca_column] = (df[ca_column] - df['blank_ca']) - 0.038215379 * (df[na_column] - df['blank_na'])
 
     # mg / L -> mg in falcon
     # ca_column is in mL
@@ -37,7 +38,7 @@ def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_
 
 
     # Volume Vilt in mL -> L -> m3
-    df[V_filt_column] = df[V_filt_column] * 1e-6
+    conversion = df[V_filt_column] * 1e-6
 
     #print(f'this is volume in filt in m3 {df[V_filt_column]}')
 
@@ -45,7 +46,7 @@ def pic_from_ca(df, ca_column, na_column, V_acid_column, V_filt_column, end_col_
     # 0.001 to multiply V filt column from L to m3
     # 0.001 * 0.001 = 0.000001 = 1e-6
 
-    df[end_col_name] = (M_sample / df[V_filt_column]) 
+    df[end_col_name] = (M_sample / conversion) 
 
     # conversion mol to mmol
 
